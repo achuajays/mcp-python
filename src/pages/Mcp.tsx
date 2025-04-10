@@ -85,7 +85,7 @@ const Mcp = () => {
     <div className="container py-8 max-w-screen-xl mx-auto">
       <div className="flex flex-col gap-6">
         <div>
-          <h1 className="mb-4">Multi-Client Protocol</h1>
+          <h1 className="mb-4">Model Context Protocol</h1>
           <p className="text-lg text-muted-foreground mb-8">
             Explore different MCP server options for your applications. Each card represents a different type of MCP server that you can use or customize.
           </p>

@@ -14,7 +14,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="text-sm text-muted-foreground">
-          Multi-Client Protocol Documentation - {currentYear}
+          Model Context Protocol Documentation - {currentYear}
         </div>
         <nav className="flex items-center space-x-4 text-sm">
           <Link to="/" className="text-muted-foreground hover:text-foreground">
