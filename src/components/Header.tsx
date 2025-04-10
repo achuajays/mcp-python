@@ -38,6 +38,12 @@ const Header = () => {
             >
               Quickstart
             </Link>
+            <Link 
+              to="/mcp" 
+              className={`transition-colors hover:text-foreground/80 ${isActive('/mcp') ? 'text-foreground font-bold' : 'text-foreground/60'}`}
+            >
+              MCP
+            </Link>
           </nav>
           <div className="flex items-center space-x-2">
             <a 
@@ -90,6 +96,13 @@ const Header = () => {
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Quickstart
+                </Link>
+                <Link 
+                  to="/mcp"
+                  className={`flex w-full items-center rounded-md p-2 text-sm font-medium ${isActive('/mcp') ? 'bg-muted' : ''}`}
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  MCP
                 </Link>
               </nav>
             </div>

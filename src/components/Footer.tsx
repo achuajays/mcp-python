@@ -23,6 +23,9 @@ const Footer = () => {
           <Link to="/quickstart" className="text-muted-foreground hover:text-foreground">
             Quickstart
           </Link>
+          <Link to="/mcp" className="text-muted-foreground hover:text-foreground">
+            MCP
+          </Link>
           <a 
             href="https://github.com/anthropics/anthropic-tools/tree/main/mcp" 
             target="_blank" 
