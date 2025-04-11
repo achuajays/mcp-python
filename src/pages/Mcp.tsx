@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import { ExternalLink, FileText, Info, GitBranch, Search } from "lucide-react";
+import { ExternalLink, FileText, Info, GitBranch, Search, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -24,6 +24,12 @@ const mcpOptions: McpCardProps[] = [
     description: "This MCP server is configured to return anime titles based on a query.",
     use: "Perfect for applications that need to search and retrieve anime titles based on user input.",
     githubLink: "https://github.com/achuajays/MCP_Server/tree/main/Anime_Search_Mcp",
+  },
+  {
+    name: "LinkedIn Profile MCP",
+    description: "This MCP server extracts and provides detailed information from LinkedIn profiles.",
+    use: "Ideal for applications that need to retrieve and analyze professional profile data from LinkedIn.",
+    githubLink: "https://github.com/achuajays/MCP_Server/tree/main/Linkedin_Profile_Mcp",
   }
 ];
 
@@ -32,7 +38,11 @@ const McpCard = ({ name, description, use, githubLink }: McpCardProps) => {
     <Card className="flex flex-col h-full transition-all hover:shadow-lg">
       <CardHeader>
         <CardTitle className="flex items-center gap-2">
-          <Search className="h-5 w-5 text-primary" />
+          {name.includes("Anime") ? (
+            <Search className="h-5 w-5 text-primary" />
+          ) : (
+            <Linkedin className="h-5 w-5 text-primary" />
+          )}
           {name}
         </CardTitle>
         <CardDescription>{description}</CardDescription>
