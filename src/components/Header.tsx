@@ -13,7 +13,7 @@ const Header = () => {
         <div className="mr-4 flex">
           <Link to="/" className="flex items-center space-x-2">
             <div className="font-bold text-2xl text-foreground">
-              <span className="text-primary">MCP For Daily Use </span>
+              <span className="text-primary"></span>
               <span className="text-muted-foreground"></span>
             </div>
           </Link>
