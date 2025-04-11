@@ -41,7 +41,7 @@ const Header = () => {
           </nav>
           <div className="flex items-center space-x-2">
             <a 
-              href="https://github.com/anthropics/anthropic-tools/tree/main/mcp" 
+              href="https://github.com/achuajays" 
               target="_blank" 
               rel="noopener noreferrer"
             >
