@@ -437,55 +437,6 @@ Forecast: {period['detailedForecast']}
               Save the file, and restart Claude for Desktop.
             </p>
 
-            <h2 className="text-2xl font-semibold mt-12 mb-4">Test with commands</h2>
-            <p className="mb-4">
-              Let's make sure Claude for Desktop is picking up the two tools we've exposed in our weather server. 
-              You can do this by looking for the hammer icon:
-            </p>
-
-            <div className="my-6 flex justify-center">
-              <div className="border rounded-lg p-2 max-w-md">
-                <img 
-                  src="https://www.anthropic.com/images/index/hero.png" 
-                  alt="Claude interface showing the tools icon" 
-                  className="rounded"
-                />
-              </div>
-            </div>
-
-            <p className="mb-4">
-              After clicking on the hammer icon, you should see two tools listed:
-            </p>
-
-            <div className="my-6 flex justify-center">
-              <div className="border rounded-lg p-2 max-w-md">
-                <img 
-                  src="https://www.anthropic.com/images/index/hero.png" 
-                  alt="Claude interface showing the available tools" 
-                  className="rounded"
-                />
-              </div>
-            </div>
-
-            <p className="mb-4">
-              If your server isn't being picked up by Claude for Desktop, proceed to the Troubleshooting section for debugging tips.
-            </p>
-
-            <p className="mb-4">
-              If the hammer icon has shown up, you can now test your server by running the following commands in Claude for Desktop:
-            </p>
-
-            <ul className="list-disc pl-6 my-4 space-y-2">
-              <li>What's the weather in Sacramento?</li>
-              <li>What are the active weather alerts in Texas?</li>
-            </ul>
-
-            <div className="bg-muted/50 p-4 rounded-md my-6 border">
-              <p className="text-sm">
-                Since this is the US National Weather service, the queries will only work for US locations.
-              </p>
-            </div>
-
             <h2 className="text-2xl font-semibold mt-12 mb-4">What's happening under the hood</h2>
             <p>
               When you ask a question:
