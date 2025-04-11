@@ -1,3 +1,4 @@
+
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -13,13 +14,13 @@ const Hero = () => {
           </p>
           <div className="mt-8 flex justify-center space-x-4 animate-fade-in delay-200">
             <Button asChild className="text-base" size="lg">
-              <Link to="/quickstart">
+              <Link to="/mcp">
                 Get Started
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
             <Button asChild variant="outline" className="text-base" size="lg">
-              <a href="https://github.com/anthropics/anthropic-tools/tree/main/mcp" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/achuajays" target="_blank" rel="noopener noreferrer">
                 View on GitHub
               </a>
             </Button>
