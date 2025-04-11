@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import { ExternalLink, FileText, Info, GitBranch } from "lucide-react";
+import { ExternalLink, FileText, Info, GitBranch, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -20,28 +20,10 @@ interface McpCardProps {
 
 const mcpOptions: McpCardProps[] = [
   {
-    name: "Weather Server",
-    description: "A simple MCP weather server that provides forecast data and severe weather alerts.",
-    use: "Ideal for applications that need real-time weather information.",
-    githubLink: "https://github.com/anthropics/anthropic-tools/tree/main/mcp/examples/weather",
-  },
-  {
-    name: "Calculator Server",
-    description: "An MCP server that provides basic and scientific calculation capabilities.",
-    use: "Perfect for applications requiring computational assistance.",
-    githubLink: "https://github.com/anthropics/anthropic-tools/tree/main/mcp/examples/calculator",
-  },
-  {
-    name: "File Server",
-    description: "An MCP server that allows access to local files and directories.",
-    use: "Great for applications that need to interact with the local file system.",
-    githubLink: "https://github.com/anthropics/anthropic-tools/tree/main/mcp/examples/file-server",
-  },
-  {
-    name: "Knowledge Base",
-    description: "An MCP server that provides access to a local knowledge base.",
-    use: "Useful for applications that need to search and retrieve information from a knowledge base.",
-    githubLink: "https://github.com/anthropics/anthropic-tools/tree/main/mcp/examples/knowledge-base",
+    name: "Anime Search MCP",
+    description: "This MCP server is configured to return anime titles based on a query.",
+    use: "Perfect for applications that need to search and retrieve anime titles based on user input.",
+    githubLink: "https://github.com/achuajays/MCP_Server/tree/main/Anime_Search_Mcp",
   }
 ];
 
@@ -50,6 +32,7 @@ const McpCard = ({ name, description, use, githubLink }: McpCardProps) => {
     <Card className="flex flex-col h-full transition-all hover:shadow-lg">
       <CardHeader>
         <CardTitle className="flex items-center gap-2">
+          <Search className="h-5 w-5 text-primary" />
           {name}
         </CardTitle>
         <CardDescription>{description}</CardDescription>
@@ -91,7 +74,7 @@ const Mcp = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {mcpOptions.map((option) => (
             <McpCard
               key={option.name}
