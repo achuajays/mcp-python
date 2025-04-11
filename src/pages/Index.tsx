@@ -1,22 +1,11 @@
-
 import { Link } from "react-router-dom";
 import Hero from "@/components/Hero";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { 
-  Terminal, 
-  Code, 
-  FileText, 
-  ArrowRight, 
-  Server, 
-  Zap, 
-  Globe 
-} from "lucide-react";
-
+import { Terminal, Code, FileText, ArrowRight, Server, Zap, Globe } from "lucide-react";
 const Index = () => {
-  return (
-    <div className="flex min-h-screen flex-col">
+  return <div className="flex min-h-screen flex-col">
       <Header />
       
       <main className="flex-1">
@@ -25,7 +14,7 @@ const Index = () => {
         {/* Feature section */}
         <section className="container py-12 md:py-16 lg:py-20">
           <div className="mx-auto max-w-3xl text-center">
-            <h2 className="text-3xl font-bold leading-tight animate-fade-in">What is Multi-Client Protocol?</h2>
+            <h2 className="text-3xl font-bold leading-tight animate-fade-in">What is Model Context Protocol?</h2>
             <p className="mt-4 text-lg text-muted-foreground animate-fade-in">
               MCP is a standard protocol for clients to connect with servers that provide tools, resources, and prompts for AI assistants.
             </p>
@@ -42,7 +31,9 @@ const Index = () => {
               </p>
             </div>
             
-            <div className="border rounded-lg p-6 animate-slide-in" style={{ animationDelay: "100ms" }}>
+            <div className="border rounded-lg p-6 animate-slide-in" style={{
+            animationDelay: "100ms"
+          }}>
               <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
                 <FileText className="h-6 w-6 text-primary" />
               </div>
@@ -52,7 +43,9 @@ const Index = () => {
               </p>
             </div>
             
-            <div className="border rounded-lg p-6 animate-slide-in" style={{ animationDelay: "200ms" }}>
+            <div className="border rounded-lg p-6 animate-slide-in" style={{
+            animationDelay: "200ms"
+          }}>
               <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
                 <Code className="h-6 w-6 text-primary" />
               </div>
@@ -128,8 +121,6 @@ const Index = () => {
       </main>
       
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
