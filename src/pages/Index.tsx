@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import Hero from "@/components/Hero";
 import Header from "@/components/Header";
@@ -107,11 +108,11 @@ const Index = () => {
             <div className="flex flex-col items-center text-center">
               <h2 className="text-3xl font-bold">Ready to get started?</h2>
               <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
-                Follow our quickstart guide to build your first MCP weather server and connect it to Claude for Desktop.
+                Explore available MCP servers and learn how you can use them in your applications.
               </p>
               <Button asChild size="lg" className="mt-8">
-                <Link to="/quickstart">
-                  View Quickstart Guide
+                <Link to="/mcp">
+                  Explore MCP Servers
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>

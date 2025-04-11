@@ -33,12 +33,6 @@ const Header = () => {
               Home
             </Link>
             <Link 
-              to="/quickstart" 
-              className={`transition-colors hover:text-foreground/80 ${isActive('/quickstart') ? 'text-foreground font-bold' : 'text-foreground/60'}`}
-            >
-              Quickstart
-            </Link>
-            <Link 
               to="/mcp" 
               className={`transition-colors hover:text-foreground/80 ${isActive('/mcp') ? 'text-foreground font-bold' : 'text-foreground/60'}`}
             >
@@ -89,13 +83,6 @@ const Header = () => {
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Home
-                </Link>
-                <Link 
-                  to="/quickstart"
-                  className={`flex w-full items-center rounded-md p-2 text-sm font-medium ${isActive('/quickstart') ? 'bg-muted' : ''}`}
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Quickstart
                 </Link>
                 <Link 
                   to="/mcp"
