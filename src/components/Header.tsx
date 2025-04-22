@@ -2,13 +2,17 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
+  
   const isActive = (path: string) => {
     return location.pathname === path;
   };
-  return <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-backdrop-blur:bg-background/60">
+
+  return (
+    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-backdrop-blur:bg-background/60">
       <div className="container flex h-16 max-w-screen-2xl items-center">
         <div className="mr-4 flex">
           <Link to="/" className="flex items-center space-x-2">
@@ -27,6 +31,9 @@ const Header = () => {
             <Link to="/mcp" className={`transition-colors hover:text-foreground/80 ${isActive('/mcp') ? 'text-foreground font-bold' : 'text-foreground/60'}`}>
               MCP
             </Link>
+            <Link to="/about" className={`transition-colors hover:text-foreground/80 ${isActive('/about') ? 'text-foreground font-bold' : 'text-foreground/60'}`}>
+              About
+            </Link>
           </nav>
           <div className="flex items-center space-x-2">
             <a href="https://github.com/achuajays" target="_blank" rel="noopener noreferrer">
@@ -44,7 +51,8 @@ const Header = () => {
           </Button>
         </div>
 
-        {isMenuOpen && <div className="fixed inset-0 top-16 z-50 grid h-[calc(100vh-4rem)] grid-flow-row auto-rows-max overflow-auto p-6 pb-32 shadow-md animate-in md:hidden bg-background">
+        {isMenuOpen && (
+          <div className="fixed inset-0 top-16 z-50 grid h-[calc(100vh-4rem)] grid-flow-row auto-rows-max overflow-auto p-6 pb-32 shadow-md animate-in md:hidden bg-background">
             <div className="relative z-20 grid gap-6 rounded-md bg-background p-4">
               <Button variant="ghost" size="sm" className="absolute right-4 top-4 px-0 text-base hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0" onClick={() => setIsMenuOpen(false)}>
                 <X className="h-6 w-6" />
@@ -57,10 +65,16 @@ const Header = () => {
                 <Link to="/mcp" className={`flex w-full items-center rounded-md p-2 text-sm font-medium ${isActive('/mcp') ? 'bg-muted' : ''}`} onClick={() => setIsMenuOpen(false)}>
                   MCP
                 </Link>
+                <Link to="/about" className={`flex w-full items-center rounded-md p-2 text-sm font-medium ${isActive('/about') ? 'bg-muted' : ''}`} onClick={() => setIsMenuOpen(false)}>
+                  About
+                </Link>
               </nav>
             </div>
-          </div>}
+          </div>
+        )}
       </div>
-    </header>;
+    </header>
+  );
 };
+
 export default Header;
