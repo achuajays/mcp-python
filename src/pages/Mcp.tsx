@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { ExternalLink, FileText, Info, GitBranch, Search, Linkedin, ArrowLeft, Hotel, Film, Tv, Trophy, Gamepad, Quote, Stars, Youtube, Instagram, ShoppingCart, Watch, CloudSun } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -39,23 +40,23 @@ const McpCard = ({
   };
 
   return (
-    <Card className="flex flex-col h-full transition-all hover:shadow-lg">
+    <Card className="flex flex-col h-full transition-all hover:shadow-lg hover:scale-[1.02] group">
       <CardHeader>
-        <CardTitle className="flex items-center gap-2">
+        <CardTitle className="flex items-center gap-3 group-hover:text-primary">
           {getIcon(name)}
           {name}
         </CardTitle>
-        <CardDescription>{description}</CardDescription>
+        <CardDescription className="text-muted-foreground/90">{description}</CardDescription>
       </CardHeader>
       <CardContent>
-        <div className="flex items-start gap-2 text-sm">
-          <Info className="h-4 w-4 mt-0.5 text-muted-foreground" />
-          <p>{use}</p>
+        <div className="flex items-start gap-3 text-sm">
+          <Info className="h-4 w-4 mt-1 text-primary/70" />
+          <p className="leading-relaxed">{use}</p>
         </div>
       </CardContent>
       <CardFooter className="mt-auto">
         <a href={githubLink} target="_blank" rel="noopener noreferrer" className="w-full">
-          <Button variant="outline" className="w-full flex items-center gap-2">
+          <Button variant="outline" className="w-full flex items-center gap-2 transition-colors hover:bg-primary/10 hover:text-primary">
             <GitBranch className="h-4 w-4" />
             <span>View on GitHub</span>
           </Button>
@@ -67,36 +68,42 @@ const McpCard = ({
 
 const Mcp = () => {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen bg-background">
       <Header />
-      <div className="container py-8 max-w-screen-xl mx-auto flex-1">
-        <div className="flex flex-col gap-6">
-          <div className="flex items-center gap-2">
-            <Link to="/">
-              <Button variant="outline" size="sm" className="flex items-center gap-2 mb-4 border-muted-foreground/30 hover:border-primary/40 hover:bg-accent/80 transition-all">
-                <ArrowLeft className="h-4 w-4" />
-                <span>Back to Home</span>
-              </Button>
-            </Link>
+      <div className="container py-12 max-w-screen-xl mx-auto flex-1">
+        <div className="flex flex-col gap-8">
+          <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+            <div>
+              <Link to="/">
+                <Button variant="ghost" size="sm" className="flex items-center gap-2 mb-6 hover:bg-accent/80 transition-all">
+                  <ArrowLeft className="h-4 w-4" />
+                  <span>Back to Home</span>
+                </Button>
+              </Link>
+              <h1 className="text-4xl font-bold bg-gradient-to-r from-primary via-primary/80 to-secondary bg-clip-text text-transparent mb-4">
+                Model Context Protocol
+              </h1>
+              <div className="h-1 w-20 bg-gradient-to-r from-primary to-secondary rounded-full mb-6"></div>
+              <p className="text-lg text-muted-foreground/90 max-w-2xl leading-relaxed">
+                Explore different MCP server options for your applications. Each card represents a different type of MCP server that you can use or customize.
+              </p>
+            </div>
           </div>
           
-          <div className="mb-4">
-            <h1 className="text-4xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-4">Model Context Protocol</h1>
-            <div className="h-1 w-20 bg-gradient-to-r from-primary to-secondary rounded-full mb-6"></div>
-            <p className="text-lg text-muted-foreground max-w-2xl">
-              Explore different MCP server options for your applications. Each card represents a different type of MCP server that you can use or customize.
-            </p>
-          </div>
-          
-          <div className={cn("grid gap-6", "grid-cols-1 md:grid-cols-2 lg:grid-cols-3")}>
-            {mcpData.mcpOptions.map(option => (
-              <McpCard 
-                key={option.name} 
-                name={option.name} 
-                description={option.description} 
-                use={option.use} 
-                githubLink={option.githubLink} 
-              />
+          <div className={cn(
+            "grid gap-6",
+            "grid-cols-1 md:grid-cols-2 lg:grid-cols-3",
+            "animate-fade-in [&>*]:animate-slide-in"
+          )}>
+            {mcpData.mcpOptions.map((option, index) => (
+              <div key={option.name} style={{ animationDelay: `${index * 0.1}s` }}>
+                <McpCard 
+                  name={option.name} 
+                  description={option.description} 
+                  use={option.use} 
+                  githubLink={option.githubLink} 
+                />
+              </div>
             ))}
           </div>
         </div>
