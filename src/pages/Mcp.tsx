@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { ExternalLink, FileText, Info, GitBranch, Search, Linkedin, ArrowLeft, Hotel, Film, Tv, Trophy, Gamepad, Quote, Stars, Youtube, Instagram, ShoppingCart, Watch, CloudSun, Mail, MapPin, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -98,7 +99,7 @@ const AboutSection = () => {
                 GitHub
               </Button>
             </a>
-            <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/adarsh-ajay-9a8073226/" target="_blank" rel="noopener noreferrer">
               <Button variant="outline" size="sm" className="gap-2">
                 <Linkedin className="h-4 w-4" />
                 LinkedIn
