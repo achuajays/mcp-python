@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { ExternalLink, FileText, Info, GitBranch, Search, Linkedin, ArrowLeft, Hotel, Film, Tv, Trophy } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -5,6 +6,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { cn } from "@/lib/utils";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import mcpData from "@/data/mcp.json";
 
 interface McpCardProps {
   name: string;
@@ -12,45 +14,6 @@ interface McpCardProps {
   use: string;
   githubLink: string;
 }
-
-const mcpOptions: McpCardProps[] = [
-  {
-    name: "Anime Search MCP",
-    description: "This MCP server is configured to return anime titles based on a query.",
-    use: "Perfect for applications that need to search and retrieve anime titles based on user input.",
-    githubLink: "https://github.com/achuajays/MCP_Server/tree/main/Anime_Search_Mcp"
-  },
-  {
-    name: "LinkedIn Profile MCP",
-    description: "This MCP server extracts and provides detailed information from LinkedIn profiles.",
-    use: "Ideal for applications that need to retrieve and analyze professional profile data from LinkedIn.",
-    githubLink: "https://github.com/achuajays/MCP_Server/tree/main/Linkedin_Profile_Mcp"
-  },
-  {
-    name: "Movie Search MCP",
-    description: "This MCP server helps search and retrieve movie information based on queries.",
-    use: "Great for applications that need to find and display movie details and information.",
-    githubLink: "https://github.com/achuajays/MCP_Server/tree/main/Movie_Search_Mcp"
-  },
-  {
-    name: "Series Content MCP",
-    description: "This MCP server provides detailed information about TV series and shows.",
-    use: "Perfect for applications that need to display or analyze TV series content and metadata.",
-    githubLink: "https://github.com/achuajays/MCP_Server/tree/main/Series_Content_Mcp"
-  },
-  {
-    name: "Hotel Estimate MCP",
-    description: "This MCP server provides hotel pricing and estimation services.",
-    use: "Ideal for travel applications that need to estimate and compare hotel prices.",
-    githubLink: "https://github.com/achuajays/MCP_Server/tree/main/Hotel_Estimate_Mcp"
-  },
-  {
-    name: "Cricket Search MCP",
-    description: "This MCP server provides cricket-related information and statistics.",
-    use: "Perfect for sports applications that need to access cricket match data and player statistics.",
-    githubLink: "https://github.com/achuajays/MCP_Server/tree/main/Cricket_Search_Mcp"
-  }
-];
 
 const McpCard = ({
   name,
@@ -96,7 +59,8 @@ const McpCard = ({
 };
 
 const Mcp = () => {
-  return <div className="flex flex-col min-h-screen">
+  return (
+    <div className="flex flex-col min-h-screen">
       <Header />
       <div className="container py-8 max-w-screen-xl mx-auto flex-1">
         <div className="flex flex-col gap-6">
@@ -118,14 +82,21 @@ const Mcp = () => {
           </div>
           
           <div className={cn("grid gap-6", "grid-cols-1 md:grid-cols-2 lg:grid-cols-3")}>
-            {mcpOptions.map(option => <McpCard key={option.name} name={option.name} description={option.description} use={option.use} githubLink={option.githubLink} />)}
+            {mcpData.mcpOptions.map(option => (
+              <McpCard 
+                key={option.name} 
+                name={option.name} 
+                description={option.description} 
+                use={option.use} 
+                githubLink={option.githubLink} 
+              />
+            ))}
           </div>
-          
-          
         </div>
       </div>
       <Footer />
-    </div>;
+    </div>
+  );
 };
 
 export default Mcp;

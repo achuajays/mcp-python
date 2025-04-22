@@ -1,0 +1,41 @@
+
+{
+  "mcpOptions": [
+    {
+      "name": "Anime Search MCP",
+      "description": "This MCP server is configured to return anime titles based on a query.",
+      "use": "Perfect for applications that need to search and retrieve anime titles based on user input.",
+      "githubLink": "https://github.com/achuajays/MCP_Server/tree/main/Anime_Search_Mcp"
+    },
+    {
+      "name": "LinkedIn Profile MCP",
+      "description": "This MCP server extracts and provides detailed information from LinkedIn profiles.",
+      "use": "Ideal for applications that need to retrieve and analyze professional profile data from LinkedIn.",
+      "githubLink": "https://github.com/achuajays/MCP_Server/tree/main/Linkedin_Profile_Mcp"
+    },
+    {
+      "name": "Movie Search MCP",
+      "description": "This MCP server helps search and retrieve movie information based on queries.",
+      "use": "Great for applications that need to find and display movie details and information.",
+      "githubLink": "https://github.com/achuajays/MCP_Server/tree/main/Movie_Search_Mcp"
+    },
+    {
+      "name": "Series Content MCP",
+      "description": "This MCP server provides detailed information about TV series and shows.",
+      "use": "Perfect for applications that need to display or analyze TV series content and metadata.",
+      "githubLink": "https://github.com/achuajays/MCP_Server/tree/main/Series_Content_Mcp"
+    },
+    {
+      "name": "Hotel Estimate MCP",
+      "description": "This MCP server provides hotel pricing and estimation services.",
+      "use": "Ideal for travel applications that need to estimate and compare hotel prices.",
+      "githubLink": "https://github.com/achuajays/MCP_Server/tree/main/Hotel_Estimate_Mcp"
+    },
+    {
+      "name": "Cricket Search MCP",
+      "description": "This MCP server provides cricket-related information and statistics.",
+      "use": "Perfect for sports applications that need to access cricket match data and player statistics.",
+      "githubLink": "https://github.com/achuajays/MCP_Server/tree/main/Cricket_Search_Mcp"
+    }
+  ]
+}
