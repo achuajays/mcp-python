@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { ExternalLink, FileText, Info, GitBranch, Search, Linkedin, ArrowLeft, Hotel, Film, Tv, Trophy, Gamepad, Quote, Stars, Youtube, Instagram, ShoppingCart, Watch, CloudSun } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -40,23 +39,23 @@ const McpCard = ({
   };
 
   return (
-    <Card className="flex flex-col h-full transition-all hover:shadow-lg border-[#38BDF8]/20 bg-[#1E293B] backdrop-blur-sm">
+    <Card className="flex flex-col h-full transition-all hover:shadow-lg">
       <CardHeader>
-        <CardTitle className="flex items-center gap-2 text-[#F1F5F9]">
+        <CardTitle className="flex items-center gap-2">
           {getIcon(name)}
           {name}
         </CardTitle>
-        <CardDescription className="text-[#94A3B8]">{description}</CardDescription>
+        <CardDescription>{description}</CardDescription>
       </CardHeader>
       <CardContent>
         <div className="flex items-start gap-2 text-sm">
-          <Info className="h-4 w-4 mt-0.5 text-[#38BDF8]" />
-          <p className="text-[#94A3B8]">{use}</p>
+          <Info className="h-4 w-4 mt-0.5 text-muted-foreground" />
+          <p>{use}</p>
         </div>
       </CardContent>
       <CardFooter className="mt-auto">
         <a href={githubLink} target="_blank" rel="noopener noreferrer" className="w-full">
-          <Button variant="outline" className="w-full flex items-center gap-2 border-[#38BDF8]/30 hover:border-[#38BDF8]/60 hover:bg-[#38BDF8]/10 text-[#F1F5F9]">
+          <Button variant="outline" className="w-full flex items-center gap-2">
             <GitBranch className="h-4 w-4" />
             <span>View on GitHub</span>
           </Button>
@@ -68,13 +67,13 @@ const McpCard = ({
 
 const Mcp = () => {
   return (
-    <div className="flex flex-col min-h-screen bg-[#0F172A]">
+    <div className="flex flex-col min-h-screen">
       <Header />
       <div className="container py-8 max-w-screen-xl mx-auto flex-1">
         <div className="flex flex-col gap-6">
           <div className="flex items-center gap-2">
             <Link to="/">
-              <Button variant="outline" size="sm" className="flex items-center gap-2 mb-4 border-[#38BDF8]/30 hover:border-[#38BDF8]/60 hover:bg-[#38BDF8]/10 text-[#F1F5F9] transition-all">
+              <Button variant="outline" size="sm" className="flex items-center gap-2 mb-4 border-muted-foreground/30 hover:border-primary/40 hover:bg-accent/80 transition-all">
                 <ArrowLeft className="h-4 w-4" />
                 <span>Back to Home</span>
               </Button>
@@ -82,9 +81,9 @@ const Mcp = () => {
           </div>
           
           <div className="mb-4">
-            <h1 className="text-4xl font-bold bg-gradient-to-r from-[#38BDF8] to-[#38BDF8]/70 bg-clip-text text-transparent mb-4">Model Context Protocol</h1>
-            <div className="h-1 w-20 bg-gradient-to-r from-[#38BDF8] to-[#38BDF8]/70 rounded-full mb-6"></div>
-            <p className="text-lg text-[#94A3B8] max-w-2xl">
+            <h1 className="text-4xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-4">Model Context Protocol</h1>
+            <div className="h-1 w-20 bg-gradient-to-r from-primary to-secondary rounded-full mb-6"></div>
+            <p className="text-lg text-muted-foreground max-w-2xl">
               Explore different MCP server options for your applications. Each card represents a different type of MCP server that you can use or customize.
             </p>
           </div>
