@@ -1,6 +1,5 @@
-
 import { Link } from "react-router-dom";
-import { ExternalLink, FileText, Info, GitBranch, Search, Linkedin, ArrowLeft, Hotel, Film, Tv, Trophy, Gamepad, Quote, Stars, Youtube, Instagram, ShoppingCart, Watch, CloudSun } from "lucide-react";
+import { ExternalLink, FileText, Info, GitBranch, Search, Linkedin, ArrowLeft, Hotel, Film, Tv, Trophy, Gamepad, Quote, Stars, Youtube, Instagram, ShoppingCart, Watch, CloudSun, Mail, MapPin, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
@@ -66,6 +65,69 @@ const McpCard = ({
   );
 };
 
+const AboutSection = () => {
+  return (
+    <div className="mb-16 p-6 bg-card rounded-lg shadow-lg animate-fade-in">
+      <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-primary via-primary/80 to-secondary bg-clip-text text-transparent">
+        About the Developer
+      </h2>
+      <div className="grid md:grid-cols-2 gap-8">
+        <div className="space-y-4">
+          <h3 className="text-xl font-semibold text-foreground">Adarsh Ajay</h3>
+          <p className="text-muted-foreground">Software Development Engineer at AOT Technologies</p>
+          <div className="space-y-2">
+            <div className="flex items-center gap-2 text-muted-foreground">
+              <Mail className="h-4 w-4" />
+              <a href="mailto:adarshajays139@gmail.com" className="hover:text-primary transition-colors">
+                adarshajays139@gmail.com
+              </a>
+            </div>
+            <div className="flex items-center gap-2 text-muted-foreground">
+              <Phone className="h-4 w-4" />
+              <span>+91 9605636297</span>
+            </div>
+            <div className="flex items-center gap-2 text-muted-foreground">
+              <MapPin className="h-4 w-4" />
+              <span>Trivandrum, India</span>
+            </div>
+          </div>
+          <div className="flex gap-4 pt-4">
+            <a href="https://github.com/achuajays" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" size="sm" className="gap-2">
+                <FileText className="h-4 w-4" />
+                GitHub
+              </Button>
+            </a>
+            <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" size="sm" className="gap-2">
+                <Linkedin className="h-4 w-4" />
+                LinkedIn
+              </Button>
+            </a>
+          </div>
+        </div>
+        <div className="space-y-4">
+          <h3 className="text-xl font-semibold text-foreground">Expertise</h3>
+          <div className="grid gap-2">
+            <p className="text-muted-foreground">
+              <span className="font-medium text-foreground">AI & LLM:</span> Prompt Engineering, Agent-Based Systems, MCP, CREWAI
+            </p>
+            <p className="text-muted-foreground">
+              <span className="font-medium text-foreground">Languages:</span> Python, JavaScript, TypeScript, Java, SQL
+            </p>
+            <p className="text-muted-foreground">
+              <span className="font-medium text-foreground">Frameworks:</span> FastAPI, Django, Flask, React
+            </p>
+            <p className="text-muted-foreground">
+              <span className="font-medium text-foreground">Cloud:</span> GCP (Vertex AI, Big Query), AWS (S3, SageMaker)
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const Mcp = () => {
   return (
     <div className="flex flex-col min-h-screen bg-background">
@@ -89,6 +151,8 @@ const Mcp = () => {
               </p>
             </div>
           </div>
+          
+          <AboutSection />
           
           <div className={cn(
             "grid gap-6",

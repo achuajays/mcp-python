@@ -1,73 +1,59 @@
-# Welcome to your Lovable project
 
-## Project info
+# Model Context Protocol (MCP) Documentation
 
-**URL**: https://lovable.dev/projects/0a610cb3-b125-4f94-8ec2-c57cf1edf2d5
+A comprehensive platform showcasing various Model Context Protocol implementations for different use cases, built with React, TypeScript, and modern web technologies.
 
-## How can I edit this code?
+## About the Developer
 
-There are several ways of editing your application.
+**Adarsh Ajay**  
+Software Development Engineer at AOT Technologies  
+Trivandrum, India
 
-**Use Lovable**
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/your-linkedin)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/achuajays)
+[![Medium](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@your-medium)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/0a610cb3-b125-4f94-8ec2-c57cf1edf2d5) and start prompting.
+### Contact
+- 📧 Email: adarshajays139@gmail.com
+- 📱 Phone: +91 9605636297
+- 📍 Location: Trivandrum, India
 
-Changes made via Lovable will be committed automatically to this repo.
+## Technical Expertise
 
-**Use your preferred IDE**
+### AI & LLM Technologies
+- Prompt Engineering (Chain of Thought, Few-Shot Learning)
+- Agent-Based Systems (Langchain, N8N, Make.com)
+- MCP, CREWAI, Langflow, Smolagents
+- Hallucination Prevention Techniques
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Core Technologies
+- Languages: Python, JavaScript, TypeScript, Java, SQL
+- Frameworks: FastAPI, Django, Flask, React
+- AI Frameworks: Langchain, TensorFlow, PyTorch, Hugging Face
+- Cloud: GCP (Vertex AI, Big Query), AWS (S3, SageMaker)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Project Setup
 
-Follow these steps:
+```bash
+# Install dependencies
+npm install
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Run development server
 npm run dev
+
+# Build for production
+npm run build
 ```
 
-**Edit a file directly in GitHub**
+## Features
+- Multiple MCP implementations for various use cases
+- Responsive and modern UI design
+- Real-time preview and testing capabilities
+- Comprehensive documentation for each MCP type
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Contributing
+Feel free to open issues or submit pull requests for improvements or bug fixes.
 
-**Use GitHub Codespaces**
+## License
+MIT License
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/0a610cb3-b125-4f94-8ec2-c57cf1edf2d5) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes it is!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
