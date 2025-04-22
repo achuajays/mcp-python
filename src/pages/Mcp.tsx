@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ExternalLink, FileText, Info, GitBranch, Search, Linkedin, ArrowLeft, Hotel, Film, Tv, Trophy, Gamepad, Quote, Stars, Youtube, Instagram } from "lucide-react";
+import { ExternalLink, FileText, Info, GitBranch, Search, Linkedin, ArrowLeft, Hotel, Film, Tv, Trophy, Gamepad, Quote, Stars, Youtube, Instagram, ShoppingCart, Watch, CloudSun } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
@@ -32,6 +32,9 @@ const McpCard = ({
     if (name.includes("Horoscope")) return <Stars className="h-5 w-5 text-primary" />;
     if (name.includes("YouTube")) return <Youtube className="h-5 w-5 text-primary" />;
     if (name.includes("Instagram")) return <Instagram className="h-5 w-5 text-primary" />;
+    if (name.includes("Grocery")) return <ShoppingCart className="h-5 w-5 text-primary" />;
+    if (name.includes("Watch")) return <Watch className="h-5 w-5 text-primary" />;
+    if (name.includes("Weather")) return <CloudSun className="h-5 w-5 text-primary" />;
     return <Search className="h-5 w-5 text-primary" />;
   };
 

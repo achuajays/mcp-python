@@ -65,6 +65,24 @@
       "description": "This MCP server provides Instagram content viewing capabilities.",
       "use": "Ideal for applications that need to display and interact with Instagram content.",
       "githubLink": "https://github.com/achuajays/MCP_Server/tree/main/instagram_viewer_mcp"
+    },
+    {
+      "name": "Grocery MCP",
+      "description": "This MCP server provides grocery-related information and services.",
+      "use": "Perfect for applications that need to manage and display grocery items and shopping lists.",
+      "githubLink": "https://github.com/achuajays/MCP_Server/tree/main/grocery_mcp"
+    },
+    {
+      "name": "Watch MCP",
+      "description": "This MCP server provides watch and time-related services.",
+      "use": "Ideal for applications that need to handle time-based features and watch functionalities.",
+      "githubLink": "https://github.com/achuajays/MCP_Server/tree/main/watch_mcp"
+    },
+    {
+      "name": "Weather MCP",
+      "description": "This MCP server provides weather information and forecasts.",
+      "use": "Perfect for applications that need to display weather data and forecasts.",
+      "githubLink": "https://github.com/achuajays/MCP_Server/tree/main/weather_mcp"
     }
   ]
 }
