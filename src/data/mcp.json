@@ -1,4 +1,3 @@
-
 {
   "mcpOptions": [
     {
@@ -36,6 +35,36 @@
       "description": "This MCP server provides cricket-related information and statistics.",
       "use": "Perfect for sports applications that need to access cricket match data and player statistics.",
       "githubLink": "https://github.com/achuajays/MCP_Server/tree/main/Cricket_Search_Mcp"
+    },
+    {
+      "name": "Game Announcements MCP",
+      "description": "This MCP server provides updates and announcements about various games.",
+      "use": "Perfect for applications that need to track and display gaming news and announcements.",
+      "githubLink": "https://github.com/achuajays/MCP_Server/tree/main/Game%20Announcements%20MCP%20Server"
+    },
+    {
+      "name": "Dev Quotes MCP",
+      "description": "This MCP server provides inspirational and educational quotes from developers.",
+      "use": "Great for applications that want to display programming-related quotes and wisdom.",
+      "githubLink": "https://github.com/achuajays/MCP_Server/tree/main/Dev%20Qouets"
+    },
+    {
+      "name": "Horoscope MCP",
+      "description": "This MCP server provides daily horoscope readings and astrological information.",
+      "use": "Ideal for applications that need to display daily horoscopes and astrological content.",
+      "githubLink": "https://github.com/achuajays/MCP_Server/tree/main/Horoscope%20MCP%20Server"
+    },
+    {
+      "name": "YouTube Download MCP",
+      "description": "This MCP server enables YouTube video downloading functionality.",
+      "use": "Perfect for applications that need to provide YouTube video downloading capabilities.",
+      "githubLink": "https://github.com/achuajays/MCP_Server/tree/main/Youtube_Download_Mcp"
+    },
+    {
+      "name": "Instagram Viewer MCP",
+      "description": "This MCP server provides Instagram content viewing capabilities.",
+      "use": "Ideal for applications that need to display and interact with Instagram content.",
+      "githubLink": "https://github.com/achuajays/MCP_Server/tree/main/instagram_viewer_mcp"
     }
   ]
 }

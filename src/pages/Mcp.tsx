@@ -1,6 +1,5 @@
-
 import { Link } from "react-router-dom";
-import { ExternalLink, FileText, Info, GitBranch, Search, Linkedin, ArrowLeft, Hotel, Film, Tv, Trophy } from "lucide-react";
+import { ExternalLink, FileText, Info, GitBranch, Search, Linkedin, ArrowLeft, Hotel, Film, Tv, Trophy, Gamepad, Quote, Stars, Youtube, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
@@ -28,6 +27,11 @@ const McpCard = ({
     if (name.includes("Series")) return <Tv className="h-5 w-5 text-primary" />;
     if (name.includes("Hotel")) return <Hotel className="h-5 w-5 text-primary" />;
     if (name.includes("Cricket")) return <Trophy className="h-5 w-5 text-primary" />;
+    if (name.includes("Game")) return <Gamepad className="h-5 w-5 text-primary" />;
+    if (name.includes("Dev")) return <Quote className="h-5 w-5 text-primary" />;
+    if (name.includes("Horoscope")) return <Stars className="h-5 w-5 text-primary" />;
+    if (name.includes("YouTube")) return <Youtube className="h-5 w-5 text-primary" />;
+    if (name.includes("Instagram")) return <Instagram className="h-5 w-5 text-primary" />;
     return <Search className="h-5 w-5 text-primary" />;
   };
 
